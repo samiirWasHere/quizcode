@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+	    <div id="heading">❖ Chemistry</div>
+        <div id="start"> ►</div>
+		<div id="instructions">
+		<b><u><h1>-> iNSTRUCTIONS :</h1></u></b>
+		<p>* Click above button to start.</p>
+        <p>* The time will be shown on bottom left corner of screen.</p>
+        <p>* The next question will be displayed after time limit specified.</p>
+        <p>* Don't Click anywhere else on the screen or else your test can be terminated.</p>
+        <p>* On bottom right corner of screen, number of question correct or wrong will be shown </p>
+        <p>right away as soon as you will select option or time runs out.</p>
+        </div>		
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="sidebar"><p>❖ Subject : Chemistry</p>
+            <p>❖ Total MCQs : 30</p>
+            <p>❖ Total Time : 30 mins</p>
+            </div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+				<div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+         <div id="copyrights"><b>- Developed by Muhammad Sameer</b></div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
